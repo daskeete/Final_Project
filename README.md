@@ -10,3 +10,6 @@ Every year thousands of people lose their lives to suicide and even more around 
 Potential data sources: Kaggle
 [https://www.kaggle.com/kazanova/sentiment140]
 
+Data description:
+The dataset was obtained from Kaggle. It is a dataset that contains 1.6 million tweets scraped and classified as either 0 = negative, or 4 = positive. Due to their being no data label for tweets that may be neither positive or negative we cannot definitively say someone is depressed after classifying their tweet. Instead however all negative classifications would sufficiently reveal the potential for someone to be depressed. The training set consists of ___ tweets and the test set consists of ___ tweets. Might need to cut down the number since excel had a hard time simply opening the file. 
+
