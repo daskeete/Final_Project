@@ -3,13 +3,23 @@ Problem Statement that introduces your selected topic, identifies significant go
 
 Problem Statement:
 
-Every year thousands of people lose their lives to suicide and even more around the world suffer from depression. People have many ways of expressing their feelings whether it be by making an online post or even writing a song. A lot of times when someone is lost to depression people are surprised or confused because they just could not see the signs leading up to the event. A few years ago lead singer of Linkin Park Chester Bennington committed suicide and as usual people were very surprised. People should not have to be left surprised by someone taking their own life so then what if we actually could create a machine learning algorithm that can analyze user generated content to determine whether the individual may/may not be showing signs of depression? After training the algorithm, i plant to test its efficacy by using song lyrics by said singer but this is more of a stretch goal.
+Every year millions of people lose their lives to cardiovascular disease/heart failure due to many different factors but mostly because of poor health. In the US heart failure is the leading cause of death in adults. As the leading cause of death in the US being able to predict heart failure before it happens would be extremely beneficial. 
+Can a ML algorithm sufficiently predict the likelihood of someone dying from heart disease based on observable features collected from their health data? This kind of model would be useful to health care providers and patients alike when it comes to assessing the severity of their heart condition whether or not they know if they have one.
 
+At first i wanted to look at using machine learning algorithms to forecast sales data but due to not finding an appropriate dataset i decided to switch to predicting stock prices instead. While there is an abundance of stock price data available i eventually decided that there were too many external factors that go into the daily price movements that affect individual stocks. After this i decided to try making a sentiment analysis classifier, which i did, but then realized afterwards that my research problem statement was not compatible with the dataset that i was using. So i finally decided to make heart failure predictors using a linear estimator, a random forest, and a boosted tree model.
 
-
-Potential data sources: Kaggle
-[https://www.kaggle.com/kazanova/sentiment140]
+Data Sources: Kaggle
+[https://www.kaggle.com/andrewmvd/heart-failure-clinical-data]
 
 Data description:
-The dataset was obtained from Kaggle. It is a dataset that contains 1.6 million tweets scraped and classified as either 0 = negative, or 4 = positive. Due to their being no data label for tweets that may be neither positive or negative we cannot definitively say someone is depressed after classifying their tweet. Instead however all negative classifications would sufficiently reveal the potential for someone to be depressed. The training set consists of ___ tweets and the test set consists of ___ tweets. We might need to cut down the number since excel had a hard time simply opening the file. 
+
+This dataset was obtained from Kaggle and you can find it in the link above. There are a total of 300 rows in the entire dataset although a larger dataset would have been preferred. Furthermore there are 13 columns of which i will be using 12 since the column 'time' is not relevant to the desired goal. 
+The column names are:
+      'age', 'anaemia', 'creatinine_phosphokinase', 'diabetes',
+      'ejection_fraction', 'high_blood_pressure', 'platelets',
+      'serum_creatinine', 'serum_sodium', 'sex', 'smoking', 'time',
+      'DEATH_EVENT'
+      
+
+
 
