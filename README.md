@@ -25,7 +25,27 @@ The columns 'anaemia', 'high_blood_pressure', 'sex', and 'smoking' are the only 
 The target column is 'DEATH_EVENT'. '0' means no recorded death and '1' indicates a death.
 This dataset suffers from class imbalance due to the number of deaths making up only about 32% of the dataset. People leaving the study earlier than others counts as a non-death event which adds further inaccuracy to our model results.
 
-## Provide the specification for your applied machine learning method that presented the most promise in providing a solution to your problem. Include the section from your python or R script that specifies your model architecture, layers, functional arguments and specifications for compiling and fitting. Provide a brief description of how you implemented your code in practice.
+## Model Specifications
+
+Provide the specification for your applied machine learning method that presented the most promise in providing a solution to your problem.
+Include the section from your python or R script that specifies your model architecture, layers, functional arguments and specifications for compiling and fitting.
+Provide a brief description of how you implemented your code in practice.
+
+I decided to do a linear classifier model, boosted trees model, and a sequential model. From the beginning i figured that the boosted trees model would outperform the linear classifier and it did. The linear classifier was the worst performing model out of the three.
+
+
+    accuracy                  0.633333
+    accuracy_baseline         0.633333
+    auc                       0.506380
+    auc_precision_recall      0.379209
+    average_loss            489.733337
+    label/mean                0.366667
+    loss                    489.733337
+    precision                 0.500000
+    prediction/mean           0.022222
+    recall                    0.030303
+    global_step             100.000000
+    dtype: float64
       
 
 
