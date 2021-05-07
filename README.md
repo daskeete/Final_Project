@@ -84,8 +84,6 @@ Results for the boosted trees model:
 ### Sequential Model Architecture:
 
 
-Model: "sequential"
-
 ![sequential](sequential.PNG)
 
 Results for Sequential Model:
@@ -99,4 +97,16 @@ The model accuracy score is 0.63 which was calculated using model.evaluate.
     
 
 
-d
+### Conclusion
+
+Conclude with a section that preliminarily assesses model performance. 
+If you have results from your implementation, you are welcome to add those in this section.
+Compare your preliminary results with those from the literature on your topic for a comparative assessment. 
+If you are not able to produce preliminary results, provide a cursory literature review that includes 2 sources that present and describes their validation. 
+With more time and project support, estimate what an ideal outcome looks like in terms of model validation.
+
+The accuracy on my best performing model was 0.767. These scores were reached without standardizing the data so there is much room for improvement. 
+My preliminary results are below the accuracy levels of the various models tested in Tripoliti et al. which were in the 80s and 90s for model accuracy. 
+
+
+[link to article](https://www.sciencedirect.com/science/article/pii/S2001037016300460)
