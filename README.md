@@ -33,7 +33,7 @@ Provide a brief description of how you implemented your code in practice.
 
 I decided to do a linear classifier model, boosted trees model, and a sequential model. From the beginning i figured that the boosted trees model would outperform the linear classifier and it did. The linear classifier was the worst performing model out of the three.
 
-# LINEAR REGRESSION
+### LINEAR REGRESSION
 
     linear_est = tf.estimator.LinearClassifier(feature_columns) #logistic regression model
     linear_est.train(train_input_fn, max_steps=100)
@@ -55,7 +55,7 @@ Results for the linear classifier:
     global_step             100.000000
     dtype: float64
       
-# BOOSTED TREES
+### BOOSTED TREES
 
     n_batches = 1
     est = tf.estimator.BoostedTreesClassifier(
@@ -81,23 +81,23 @@ Results for the boosted trees model:
     dtype: float64
 
 
-Sequential Model Architecture:
+### Sequential Model Architecture:
 
 
 Model: "sequential"
-    _________________________________________________________________
+    _________________________________________________________________.
     Layer (type)                 Output Shape              Param #   
-    =================================================================
+    =================================================================.
     dense (Dense)                (None, 12)                144       
-    _________________________________________________________________
+    _________________________________________________________________.
     dense_1 (Dense)              (None, 1)                 13        
-    _________________________________________________________________
+    _________________________________________________________________.
     dense_2 (Dense)              (None, 1)                 2         
-    =================================================================
-    Total params: 159
-    Trainable params: 159
-    Non-trainable params: 0
-    _________________________________________________________________
+    =================================================================.
+    Total params: 159.
+    Trainable params: 159.
+    Non-trainable params: 0.
+    _________________________________________________________________.
     
 .
 
