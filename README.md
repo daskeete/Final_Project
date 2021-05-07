@@ -10,8 +10,7 @@ At first i wanted to look at using machine learning algorithms to forecast sales
 
 ## Data description:
 
-Data Sources: Kaggle
-[https://www.kaggle.com/andrewmvd/heart-failure-clinical-data]
+[Data Source](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data)
 
 This dataset was obtained from Kaggle and you can find it in the link above. The original sources of this data are from the Faisalabad Institute of Cardiology and  the Allied Hospital in Faisalabad Pakistan. There are a total of 300 rows in the entire dataset although a larger dataset would have been preferred. Furthermore there are 13 columns of which i will be using 12 since the column 'time' is not relevant to the desired goal. This data comes from a study where cardiovascular disease patients were observed for a number of days before they either left the study or passed away. 
 The column names are:
