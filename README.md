@@ -33,6 +33,14 @@ Provide a brief description of how you implemented your code in practice.
 
 I decided to do a linear classifier model, boosted trees model, and a sequential model. From the beginning i figured that the boosted trees model would outperform the linear classifier and it did. The linear classifier was the worst performing model out of the three.
 
+# LINEAR REGRESSION
+
+    linear_est = tf.estimator.LinearClassifier(feature_columns) #logistic regression model
+    linear_est.train(train_input_fn, max_steps=100)
+    result = linear_est.evaluate(eval_input_fn)
+
+Results for the linear classifier:
+
 
     accuracy                  0.633333
     accuracy_baseline         0.633333
@@ -47,6 +55,61 @@ I decided to do a linear classifier model, boosted trees model, and a sequential
     global_step             100.000000
     dtype: float64
       
+# BOOSTED TREES
+
+    n_batches = 1
+    est = tf.estimator.BoostedTreesClassifier(
+                    feature_columns, n_batches_per_layer=n_batches)
+    est.train(train_input_fn, max_steps=100)
 
 
+result = est.evaluate(eval_input_fn)
+ 
+Results for the boosted trees model:
+ 
+    accuracy                  0.766667
+    accuracy_baseline         0.633333
+    auc                       0.803828
+    auc_precision_recall      0.651946
+    average_loss              0.600108
+    label/mean                0.366667
+    loss                      0.600108
+    precision                 0.730769
+    prediction/mean           0.310273
+    recall                    0.575758
+    global_step             100.000000
+    dtype: float64
 
+
+Sequential Model Architecture:
+
+
+Model: "sequential"
+    _________________________________________________________________
+    Layer (type)                 Output Shape              Param #   
+    =================================================================
+    dense (Dense)                (None, 12)                144       
+    _________________________________________________________________
+    dense_1 (Dense)              (None, 1)                 13        
+    _________________________________________________________________
+    dense_2 (Dense)              (None, 1)                 2         
+    =================================================================
+    Total params: 159
+    Trainable params: 159
+    Non-trainable params: 0
+    _________________________________________________________________
+    
+.
+
+Results for Sequential Model:
+
+
+    Epoch 10/10
+    209/209 [==============================] - 0s 771us/step - loss: 0.6459 - accuracy: 0.6537
+
+The model accuracy score is 0.63 which was calculated using model.evaluate.
+    
+    
+
+
+d
