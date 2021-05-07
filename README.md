@@ -25,7 +25,7 @@ The columns 'anaemia', 'high_blood_pressure', 'sex', and 'smoking' are the only 
 The target column is 'DEATH_EVENT'. '0' means no recorded death and '1' indicates a death.
 This dataset suffers from class imbalance due to the number of deaths making up only about 32% of the dataset. People leaving the study earlier than others counts as a non-death event which adds further inaccuracy to our model results.
 
-
+## Provide the specification for your applied machine learning method that presented the most promise in providing a solution to your problem. Include the section from your python or R script that specifies your model architecture, layers, functional arguments and specifications for compiling and fitting. Provide a brief description of how you implemented your code in practice.
       
 
 
