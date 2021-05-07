@@ -15,10 +15,11 @@ Data description:
 
 This dataset was obtained from Kaggle and you can find it in the link above. There are a total of 300 rows in the entire dataset although a larger dataset would have been preferred. Furthermore there are 13 columns of which i will be using 12 since the column 'time' is not relevant to the desired goal. 
 The column names are:
-      'age', 'anaemia', 'creatinine_phosphokinase', 'diabetes',
-      'ejection_fraction', 'high_blood_pressure', 'platelets',
-      'serum_creatinine', 'serum_sodium', 'sex', 'smoking', 'time',
-      'DEATH_EVENT'
+
+    'age', 'anaemia', 'creatinine_phosphokinase', 'diabetes',
+    'ejection_fraction', 'high_blood_pressure', 'platelets',
+    'serum_creatinine', 'serum_sodium', 'sex', 'smoking', 'time',
+    'DEATH_EVENT'
       
 
 
