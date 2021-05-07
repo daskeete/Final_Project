@@ -107,6 +107,8 @@ With more time and project support, estimate what an ideal outcome looks like in
 
 The accuracy on my best performing model was 0.767. These scores were reached without standardizing the data so there is much room for improvement. 
 My preliminary results are below the accuracy levels of the various models tested in Tripoliti et al. which were in the 80s and 90s for model accuracy. 
+So in terms of an ideal outcome, it would be best to get model accuracy to at least 90%.
 
+References
 
-[link to article](https://www.sciencedirect.com/science/article/pii/S2001037016300460)
+[Link to study](https://www.sciencedirect.com/science/article/pii/S2001037016300460)
